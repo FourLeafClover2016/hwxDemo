@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hwx.mybatis.mapper.SysRoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hwx.mybatis.entity.SysRole">
+        <id column="id" property="id" />
+        <result column="role_name" property="roleName" />
+        <result column="avilable" property="avilable" />
+    </resultMap>
+    <select id="selectById" parameterType="int" resultMap="BaseResultMap">
+        select * from sys_role where id = #{id}
+    </select>
+    <insert id="insert" parameterType="com.hwx.mybatis.entity.SysUser">
+        insert into sys_role (id, role_name, avilable)  values (#{id},#{roleName},#{avilable});
+    </insert>
+
+</mapper>
