@@ -22,7 +22,7 @@ public class PropertiesUtil {
         Properties properties;
         String value = null;
         try {
-            properties = PropertiesLoaderUtils.loadAllProperties("application.properties");
+            properties = PropertiesLoaderUtils.loadAllProperties("application-redis.properties");
             value = properties.getProperty(key);
         } catch (IOException e) {
             e.printStackTrace();
