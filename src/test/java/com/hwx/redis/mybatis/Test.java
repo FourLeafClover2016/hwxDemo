@@ -11,6 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
 @WebAppConfiguration
@@ -26,5 +30,12 @@ public class Test {
     //    int  i =0;
         sysUserService.insert();
        // sysUserService.insertTest();
+    }
+
+    @org.junit.Test
+    public void test2(){
+        SysUser sysUser = sysUserMapper.selectById(2);
+        System.out.println(sysUser.getSysRole());
+        System.out.println("--------");
     }
 }

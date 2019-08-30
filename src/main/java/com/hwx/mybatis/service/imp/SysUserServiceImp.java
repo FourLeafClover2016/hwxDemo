@@ -35,9 +35,9 @@ public class SysUserServiceImp implements SysUserService {
         sysUserMapper.insert(sysUser);
 
         SpringUtil.getBean(this.getClass()).insertTest();
-        //  insertTest();
+      //   insertTest();
     }
-    @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRED)
+    @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRES_NEW)
     public void insertTest(){
         SysRole sysRole = new SysRole();
         sysRole.setAvilable(1);
