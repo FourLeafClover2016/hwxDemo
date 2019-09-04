@@ -1,4 +1,4 @@
-package com.hwx.redis.util;
+package com.hwx.util;
 
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 

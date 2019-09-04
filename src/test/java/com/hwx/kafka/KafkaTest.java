@@ -1,8 +1,7 @@
-package com.hwx.redis.kafka;
+package com.hwx.kafka;
 
 import com.hwx.Application;
-import com.hwx.kafka.Consumer1;
-import com.hwx.kafka.Producer1;
+import com.hwx.kafka.ThreadConsumer.ConsumerThreadHander;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +32,11 @@ public class KafkaTest {
     @Test
     public void consumer() {
         consumer.consumerMessage();
+    }
+
+    @Test
+    public void thread() {
+        ConsumerThreadHander consumerThreadHander = new ConsumerThreadHander();
+        consumerThreadHander.consumer(3);
     }
 }

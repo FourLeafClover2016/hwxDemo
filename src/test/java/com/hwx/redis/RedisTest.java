@@ -1,7 +1,7 @@
-package com.hwx.redis.resis;
+package com.hwx.redis;
 
 import com.hwx.Application;
-import com.hwx.redis.util.RedisShardedPool;
+import com.hwx.util.RedisShardedPool;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

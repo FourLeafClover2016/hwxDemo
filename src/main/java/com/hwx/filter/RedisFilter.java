@@ -1,7 +1,7 @@
-package com.hwx.redis.filter;
+package com.hwx.filter;
 
-import com.hwx.redis.util.CookisUtils;
-import com.hwx.redis.util.RedisPoolUtil;
+import com.hwx.util.CookisUtils;
+import com.hwx.util.RedisPoolUtil;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;

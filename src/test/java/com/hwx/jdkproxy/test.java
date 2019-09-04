@@ -1,4 +1,4 @@
-package com.hwx.redis.jdkproxy;
+package com.hwx.jdkproxy;
 
 import com.hwx.Application;
 import com.hwx.jdkproxy.inter.MyInterface;

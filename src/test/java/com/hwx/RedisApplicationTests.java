@@ -1,4 +1,4 @@
-package com.hwx.redis;
+package com.hwx;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

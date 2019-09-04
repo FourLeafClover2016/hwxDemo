@@ -1,4 +1,4 @@
-package com.hwx.redis.mybatis;
+package com.hwx.mybatis;
 
 import com.hwx.Application;
 import com.hwx.mybatis.entity.SysUser;

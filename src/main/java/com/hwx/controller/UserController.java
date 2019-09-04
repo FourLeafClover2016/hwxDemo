@@ -1,4 +1,4 @@
-package com.hwx.redis.controller;
+package com.hwx.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
