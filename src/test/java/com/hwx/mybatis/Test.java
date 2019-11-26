@@ -22,7 +22,7 @@ public class Test {
     @Autowired
     private SysUserMapper sysUserMapper;
     @Autowired
-    private SysUserServiceImp sysUserService;
+    private SysUserService sysUserService;
     @org.junit.Test
     public void test(){
      //   SysUser sysUser = sysUserMapper.selectById(2);
