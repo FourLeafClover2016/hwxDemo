@@ -1,4 +1,4 @@
-package com.hwx.util;
+package com.hwx.redis.util;
 
 import redis.clients.jedis.*;
 import redis.clients.util.Hashing;

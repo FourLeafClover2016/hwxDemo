@@ -1,9 +1,9 @@
-package com.hwx.controller;
+package com.hwx.redis.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.hwx.entity.User;
-import com.hwx.util.CookisUtils;
-import com.hwx.util.RedisPoolUtil;
+import com.hwx.redis.entity.User;
+import com.hwx.redis.util.CookisUtils;
+import com.hwx.redis.util.RedisPoolUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

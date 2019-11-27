@@ -1,4 +1,4 @@
-package com.hwx.util;
+package com.hwx.redis.util;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

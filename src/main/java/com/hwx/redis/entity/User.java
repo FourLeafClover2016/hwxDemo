@@ -1,4 +1,4 @@
-package com.hwx.entity;
+package com.hwx.redis.entity;
 
 import lombok.Data;
 
