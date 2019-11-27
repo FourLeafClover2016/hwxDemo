@@ -10,8 +10,8 @@ public class Task implements Runnable{
     public void run() {
         System.out.println("正在执行线程------" + Thread.currentThread().getName() + "-----任务名------" + name);
         try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
+            int i = 1 / 0;
+        } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println("线程执行完成------" + Thread.currentThread().getName() + "-----任务名------" + name);

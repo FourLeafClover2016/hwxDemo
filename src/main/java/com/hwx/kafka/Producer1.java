@@ -18,7 +18,7 @@ import java.util.UUID;
 public class Producer1 {
     public void producerMessage() {
         Properties properties = new Properties();
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.124.68:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.121.198.132:19092");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         properties.put(ProducerConfig.ACKS_CONFIG, "-1");

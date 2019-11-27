@@ -18,8 +18,8 @@ import java.util.Properties;
 public class Consumer1 {
     public void consumerMessage() {
         Properties properties = new Properties();
-        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.124.68:9092");
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "groud3");
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.121.198.132:19092");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "groud1");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true");
         properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);

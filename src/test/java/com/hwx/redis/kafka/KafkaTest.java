@@ -10,6 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author: Huawei Xie
  * @date: 2019/9/3
@@ -32,6 +35,15 @@ public class KafkaTest {
 
     @Test
     public void consumer() {
-        consumer.consumerMessage();
+        String str1 = "789";
+        Str(str1);
+        System.out.println(str1);
+        //consumer.consumerMessage();
+        Queue queue = new LinkedList();
+        System.out.println(null == queue.poll());
     }
+    public void Str (String str1) {
+        str1 = "123";
+    }
+
 }
