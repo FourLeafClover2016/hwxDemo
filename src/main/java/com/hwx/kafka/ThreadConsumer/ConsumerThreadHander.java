@@ -4,7 +4,6 @@ import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.TopicPartition;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
-import java.security.PublicKey;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
@@ -22,7 +21,7 @@ public class ConsumerThreadHander<K, V> {
     public ConsumerThreadHander() {
         Properties properties = new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.124.68:9092");
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "groud3");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "groud5");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
         properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
@@ -57,5 +56,23 @@ public class ConsumerThreadHander<K, V> {
         } finally {
 
         }
+    }
+
+    public void commitOffsets () {
+        Map<TopicPartition, OffsetAndMetadata> unmodifiedMap;
+        synchronized (offsets) {
+            if (offsets.isEmpty()) {
+                return;
+            }
+            unmodifiedMap = Collections.unmodifiableMap(new HashMap<>(offsets));
+            offsets.clear();
+        }
+        consumer.commitSync(unmodifiedMap);
+
+    }
+
+    public void close() {
+        consumer.wakeup();
+        executorService.shutdown();
     }
 }

@@ -1,15 +1,14 @@
-package com.hwx.redis.controller;
+package com.hwx.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.hwx.redis.entity.User;
-import com.hwx.redis.util.CookisUtils;
-import com.hwx.redis.util.RedisPoolUtil;
+import com.hwx.entity.User;
+import com.hwx.util.CookisUtils;
+import com.hwx.util.RedisPoolUtil;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author: Huawei Xie

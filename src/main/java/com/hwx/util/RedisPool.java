@@ -1,4 +1,4 @@
-package com.hwx.redis.util;
+package com.hwx.util;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

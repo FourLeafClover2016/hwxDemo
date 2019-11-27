@@ -24,8 +24,6 @@ public class SysUserServiceImp implements SysUserService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void insert() {
-        System.out.println(SpringUtil.getBean(this.getClass()) == this);
-        System.out.println(this == this);
         SysUser sysUser = new SysUser();
         sysUser.setUsername("test");
         sysUser.setCreateTime(new Date());
@@ -33,8 +31,9 @@ public class SysUserServiceImp implements SysUserService {
         sysUser.setRoleId(1);
         sysUser.setId(11);
         sysUserMapper.insert(sysUser);
+        int i = 1 / 0;
 
-        SpringUtil.getBean(this.getClass()).insertTest();
+        //SpringUtil.getBean(this.getClass()).insertTest();
       //   insertTest();
     }
     @Transactional(rollbackFor = Exception.class,propagation = Propagation.REQUIRES_NEW)

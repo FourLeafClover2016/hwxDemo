@@ -1,4 +1,4 @@
-package com.hwx.redis.mybatis;
+package com.hwx.mybatis;
 
 import com.hwx.Application;
 import com.hwx.mybatis.entity.SysUser;
@@ -22,7 +22,7 @@ public class Test {
     @Autowired
     private SysUserMapper sysUserMapper;
     @Autowired
-    private SysUserServiceImp sysUserService;
+    private SysUserService sysUserService;
     @org.junit.Test
     public void test(){
      //   SysUser sysUser = sysUserMapper.selectById(2);
