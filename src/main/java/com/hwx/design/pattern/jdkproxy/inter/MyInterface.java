@@ -1,4 +1,4 @@
-package com.hwx.jdkproxy.inter;
+package com.hwx.design.pattern.jdkproxy.inter;
 
 public interface MyInterface {
     void before(Object object);

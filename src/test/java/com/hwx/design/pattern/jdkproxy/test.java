@@ -1,12 +1,11 @@
-package com.hwx.jdkproxy;
+package com.hwx.design.pattern.jdkproxy;
 
 import com.hwx.Application;
-import com.hwx.jdkproxy.inter.MyInterface;
-import com.hwx.jdkproxy.inter.imp.MyInterfaceImp;
-import com.hwx.jdkproxy.service.RoleService;
-import com.hwx.jdkproxy.service.imp.RoleServiceImp;
-import com.hwx.jdkproxy.util.ProxyBeanFactory;
-import com.hwx.jdkproxy.util.ProxyBeanUtil;
+import com.hwx.design.pattern.jdkproxy.inter.MyInterface;
+import com.hwx.design.pattern.jdkproxy.inter.imp.MyInterfaceImp;
+import com.hwx.design.pattern.jdkproxy.service.RoleService;
+import com.hwx.design.pattern.jdkproxy.service.imp.RoleServiceImp;
+import com.hwx.design.pattern.jdkproxy.util.ProxyBeanFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

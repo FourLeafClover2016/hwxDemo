@@ -1,6 +1,6 @@
-package com.hwx.jdkproxy.inter.imp;
+package com.hwx.design.pattern.jdkproxy.inter.imp;
 
-import com.hwx.jdkproxy.inter.MyInterface;
+import com.hwx.design.pattern.jdkproxy.inter.MyInterface;
 
 public class MyInterfaceImp implements MyInterface {
     @Override

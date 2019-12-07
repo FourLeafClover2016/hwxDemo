@@ -1,6 +1,6 @@
-package com.hwx.jdkproxy.service.imp;
+package com.hwx.design.pattern.jdkproxy.service.imp;
 
-import com.hwx.jdkproxy.service.RoleService;
+import com.hwx.design.pattern.jdkproxy.service.RoleService;
 
 public class RoleServiceImp implements RoleService {
     @Override

@@ -1,6 +1,6 @@
-package com.hwx.jdkproxy.util;
+package com.hwx.design.pattern.jdkproxy.util;
 
-import com.hwx.jdkproxy.inter.MyInterface;
+import com.hwx.design.pattern.jdkproxy.inter.MyInterface;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
