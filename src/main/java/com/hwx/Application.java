@@ -6,7 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@EnableScheduling
+//@EnableScheduling
 @SpringBootApplication
 @EnableTransactionManagement
 public class Application {
